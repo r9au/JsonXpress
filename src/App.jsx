@@ -20,7 +20,6 @@ function App() {
   const buildjson=(fields)=>{
     const result={};
     (fields || []).forEach(field=>{
-      if(field.field==="") result[""]=field.type;
       if(field.type==="nested"){
         result[field.field]=buildjson(Array.isArray(field.children)? field.children : [])
       }else{
