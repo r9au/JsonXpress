@@ -15,7 +15,6 @@ export default function Formbuilder({name}) {
   const options=[
     {label:"String",value:"String"},
     {label:"number",value:"number"},
-    {label:"boolean",value:"boolean"},
     {label:"nested",value:"nested"}
   ]
   const value=useWatch({
